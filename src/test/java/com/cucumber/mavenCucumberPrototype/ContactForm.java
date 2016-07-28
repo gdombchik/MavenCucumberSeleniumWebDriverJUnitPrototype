@@ -13,6 +13,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+/*
+ * Tutorial 5 - Scenario Data Tables
+ */
 public class ContactForm extends AbstractPageStepDefinition{
 	
 	WebDriver driver = getWebdriver();

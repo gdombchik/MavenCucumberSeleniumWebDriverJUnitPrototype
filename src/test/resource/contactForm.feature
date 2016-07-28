@@ -1,6 +1,6 @@
 Feature: Contact Form Test
 
-	@ContactForm
+  @ContactForm
   Scenario: My First Test
     Given I navigate to the cucumber website
     When I fill out the form

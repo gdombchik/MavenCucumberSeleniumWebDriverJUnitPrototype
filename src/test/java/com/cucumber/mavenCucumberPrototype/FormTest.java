@@ -24,7 +24,9 @@ public class FormTest extends AbstractPageStepDefinition{
 	@Then("^I populate the from$")
 	public void populateForm() throws Throwable {
 		Select dropdown = new Select(webdriver.findElement(By.name("langs")));
-		dropdown.selectByIndex(2);
+		dropdown.selectByIndex(2); //multi select (<select multiple name)
+		dropdown.selectByIndex(3); //multi select (<select multiple name)
+		Assert.assertEquals("Spanish",dropdown.getAllSelectedOptions().get(1).getText()); //second index of the items that are selected
 		List<WebElement>  oRadioButton = webdriver.findElements(By.name("strgth")); //radio button
 		oRadioButton.get(1).click(); //http://toolsqa.com/selenium-webdriver/checkbox-radio-button-operations/
 		System.out.println(oRadioButton.get(1).getAttribute("value"));

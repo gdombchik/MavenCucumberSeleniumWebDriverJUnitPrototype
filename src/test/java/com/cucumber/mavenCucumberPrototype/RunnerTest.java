@@ -12,8 +12,8 @@ import cucumber.api.junit.Cucumber;
 		//plugin={"pretty","html:target/html/"},
 		plugin={"pretty","json:target/json/output.json","html:target/html/"},
 		features={"src/test/resource/"}
-		//,tags={"@parameterHandling,@formTest"} //using the tags keyword creates a test suite where we can specify the features to run
-		//,tags={"@tagForZoo,@ContactForm"}
+		//,tags={"@parameterHandling,@tagForScenarioOutline,@tagForZoo"} //using the tags keyword creates a test suite where we can specify the features to run
+		,tags={"@tagForZoo"}
 )	
 
 public class RunnerTest {

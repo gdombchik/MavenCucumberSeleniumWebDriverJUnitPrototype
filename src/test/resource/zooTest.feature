@@ -11,6 +11,11 @@ Scenario:  To populate the contact form
 	#And I enter "Postcode test" into the postcode field
 	#And I enter "Email test"  into the email field
 	And I populate the form
+	    | Field | Value                    |
+      | name  | Name test         |
+      | address | Address test |
+      | postcode | Postcode test |
+      | email | Email test |
 	And I submit the contact form
 	Then I check I am on the confirmation page
 	And I close the browser

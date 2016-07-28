@@ -1,11 +1,14 @@
 package com.cucumber.mavenCucumberPrototype;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 
 import com.cucumber.mavenCucumberPrototype.pageObjectZoo.ContactConfirmationPage;
 import com.cucumber.mavenCucumberPrototype.pageObjectZoo.ContactPage;
 import com.cucumber.mavenCucumberPrototype.pageObjectZoo.LandingPage;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -56,12 +59,18 @@ public class ZooTestCucumberAndJunit extends AbstractPageStepDefinition{
 	}
 	
 	@When("^I populate the form$")
-	public void iPopulateTheForm() throws Throwable {
+	public void iPopulateTheForm(DataTable table) throws Throwable {
+		
+		List<List<String>> tableList = table.raw();
+		
+		//List 1 == "row"
+		//List 2 == "column"
+		
 	   contactPage
-	   	.setNameField("name")
-	   	.setAddressField("address")
-	   	.setPostCode("postcode")
-	   	.setEmailField("email");
+	   	.setNameField(tableList.get(1).get(1))
+	   	.setAddressField(tableList.get(2).get(1))
+	   	.setPostCode(tableList.get(3).get(1))
+	   	.setEmailField(tableList.get(4).get(1));
 	}
 
 	@When("^I submit the contact form$")

@@ -9,29 +9,32 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
+/*
+ * Scenario Outline Data Tables
+ */
 public class ScenarioOutline extends AbstractPageStepDefinition{
 	
 	WebDriver driver = getWebdriver();
 	
-	@Before
+	//@Before //Cucumber Scenario Hooks (Tutorial 7)
 	public void setUpTest(){
 		System.out.println("in setUpTest");
 		//driver = new FirefoxDriver();
 	}
 	
-	@After
+	//@After //Cucumber Scenario Hooks (Tutorial 8)
 	public void afterTest(){
 		System.out.println("in afterTest");
 		//driver.close();
 	}
 	
-	@Before("@tagForScenarioOutline")
+	@Before("@tagForScenarioOutline")  //Cucumber Scenario Hooks (Tutorial 7)
 	public void setUpTestForTag(){
 		System.out.println("in setUpTestForTag");
 		//driver = new FirefoxDriver();
 	}
 	
-	@After("@tagForScenarioOutline")
+	@After("@tagForScenarioOutline")  //Cucumber Scenario Hooks (Tutorial 8)
 	public void afterTestForTag(){
 		System.out.println("in afterTestForTag");
 		//driver.close();
