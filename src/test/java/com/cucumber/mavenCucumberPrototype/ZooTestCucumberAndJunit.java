@@ -2,6 +2,7 @@ package com.cucumber.mavenCucumberPrototype;
 
 import java.util.List;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 import com.cucumber.mavenCucumberPrototype.pageObjectZoo.ContactConfirmationPage;
@@ -12,8 +13,6 @@ import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
-import org.junit.Assert;
 
 public class ZooTestCucumberAndJunit extends AbstractPageStepDefinition{
 	
