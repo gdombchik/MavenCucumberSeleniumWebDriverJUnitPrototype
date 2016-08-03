@@ -9,9 +9,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.cucumber.mavenCucumberPrototype.pageObjectZoo.ContactConfirmationPage;
-import com.cucumber.mavenCucumberPrototype.pageObjectZoo.ContactPage;
-import com.cucumber.mavenCucumberPrototype.pageObjectZoo.LandingPage;
+import com.cucumber.pageObjectZoo.ContactConfirmationPage;
+import com.cucumber.pageObjectZoo.ContactPage;
+import com.cucumber.pageObjectZoo.LandingPage;
 
 public class ZooTestJunit {
 	

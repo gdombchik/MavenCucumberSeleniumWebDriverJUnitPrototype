@@ -5,9 +5,9 @@ import java.util.List;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
-import com.cucumber.mavenCucumberPrototype.pageObjectZoo.ContactConfirmationPage;
-import com.cucumber.mavenCucumberPrototype.pageObjectZoo.ContactPage;
-import com.cucumber.mavenCucumberPrototype.pageObjectZoo.LandingPage;
+import com.cucumber.pageObjectZoo.ContactConfirmationPage;
+import com.cucumber.pageObjectZoo.ContactPage;
+import com.cucumber.pageObjectZoo.LandingPage;
 
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;

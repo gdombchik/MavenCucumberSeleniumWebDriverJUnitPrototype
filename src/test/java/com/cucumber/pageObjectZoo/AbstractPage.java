@@ -1,4 +1,4 @@
-package com.cucumber.mavenCucumberPrototype.pageObjectZoo;
+package com.cucumber.pageObjectZoo;
 
 import org.openqa.selenium.WebDriver;
 

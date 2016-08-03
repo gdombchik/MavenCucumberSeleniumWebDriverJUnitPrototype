@@ -1,4 +1,4 @@
-package com.cucumber.PropertyManager;
+package com.cucumber.propertyManager;
 
 import java.io.IOException;
 import java.io.InputStream;

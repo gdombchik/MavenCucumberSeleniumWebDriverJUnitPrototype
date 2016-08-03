@@ -5,7 +5,7 @@ import java.io.File;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
-import com.cucumber.PropertyManager.PropertyManager;
+import com.cucumber.propertyManager.PropertyManager;
 
 public class AbstractPageStepDefinition {
 	protected static WebDriver webdriver;
