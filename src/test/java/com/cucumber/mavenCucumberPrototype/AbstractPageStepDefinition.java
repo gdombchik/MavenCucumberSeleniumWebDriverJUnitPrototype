@@ -21,11 +21,11 @@ public class AbstractPageStepDefinition {
 	    //String binary = System.getProperty("phantomjs.binary");
 		
 		PropertyManager propertyManager = new PropertyManager();
-		//propertyManager.generateProperty();
-		//File src = new File(propertyManager.getPhantomJSDriver());
+		propertyManager.generateProperty();
+		File src = new File(propertyManager.getPhantomJSDriver());
 		
 		
-		File src = new File("/Users/gregorydombchik/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs");
+		//File src = new File("/Users/gregorydombchik/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs");
 		//File src = new File("/usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs");
 		      
 		    System.setProperty("phantomjs.binary.path", src.getAbsolutePath());

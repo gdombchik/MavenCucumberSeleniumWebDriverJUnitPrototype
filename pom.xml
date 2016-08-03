@@ -10,9 +10,19 @@
 	<name>MavenCucumberPrototype</name>
 	<url>http://maven.apache.org</url>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
+	  <properties>
+    <maven.compiler.source>7</maven.compiler.source>
+    <maven.compiler.target>7</maven.compiler.target>
+  </properties>
+
+  <build>
+  <resources>
+    <resource>
+      <directory>src/test/java</directory>
+      <excludes><exclude>**/*.java</exclude></excludes>
+    </resource>
+  </resources>
+</build>
 
 	<dependencies>
 		<dependency>
