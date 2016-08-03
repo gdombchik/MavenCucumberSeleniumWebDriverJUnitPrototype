@@ -1,8 +1,11 @@
 package com.cucumber.mavenCucumberPrototype;
 
 import java.io.File;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
+
+import com.cucumber.PropertyManager.PropertyManager;
 
 public class AbstractPageStepDefinition {
 	protected static WebDriver webdriver;
@@ -16,7 +19,15 @@ public class AbstractPageStepDefinition {
 			//webdriver = new ChromeDriver();
 		
 	    //String binary = System.getProperty("phantomjs.binary");
-		    File src = new File("/Users/gregorydombchik/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs");
+		
+		PropertyManager propertyManager = new PropertyManager();
+		//propertyManager.generateProperty();
+		//File src = new File(propertyManager.getPhantomJSDriver());
+		
+		
+		File src = new File("/Users/gregorydombchik/Downloads/phantomjs-2.1.1-macosx/bin/phantomjs");
+		//File src = new File("/usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs");
+		      
 		    System.setProperty("phantomjs.binary.path", src.getAbsolutePath());
 			webdriver = new PhantomJSDriver();
 		//}
